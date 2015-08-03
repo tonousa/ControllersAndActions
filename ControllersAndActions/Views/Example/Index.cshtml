@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @*The day is: @(((DateTime)Model).DayOfWeek)*@
+        @*The day is @ViewBag.Date.DayOfWeek*@
+        The day is: @(((DateTime)TempData["Date"]).DayOfWeek)
+        <p />
+        @*The message is: @ViewBag.Message*@
+        The message is: @TempData["Message"]
+    </div>
+</body>
+</html>
